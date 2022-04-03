@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/andre/CLionProjects/Programa
+# Install script for directory: C:/Users/andre/OneDrive/Escritorio/U(2022)/I SEMESTRE/PROGRA/GITUCR/Laboratorio1/Programa
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Users/andre/CLionProjects/Programa/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Users/andre/OneDrive/Escritorio/U(2022)/I SEMESTRE/PROGRA/GITUCR/Laboratorio1/Programa/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/andre/CLionProjects/Programa/cmake-build-debug"
+			"value" : "c:/Users/andre/OneDrive/Escritorio/U(2022)/I SEMESTRE/PROGRA/GITUCR/Laboratorio1/Programa/cmake-build-debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -623,7 +623,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/andre/CLionProjects/Programa"
+			"value" : "C:/Users/andre/OneDrive/Escritorio/U(2022)/I SEMESTRE/PROGRA/GITUCR/Laboratorio1/Programa"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1239,7 +1239,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/andre/CLionProjects/Programa/cmake-build-debug"
+			"value" : "C:/Users/andre/OneDrive/Escritorio/U(2022)/I SEMESTRE/PROGRA/GITUCR/Laboratorio1/Programa/cmake-build-debug"
 		},
 		{
 			"name" : "Programa_IS_TOP_LEVEL",
@@ -1263,7 +1263,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/andre/CLionProjects/Programa"
+			"value" : "C:/Users/andre/OneDrive/Escritorio/U(2022)/I SEMESTRE/PROGRA/GITUCR/Laboratorio1/Programa"
 		}
 	],
 	"kind" : "cache",
