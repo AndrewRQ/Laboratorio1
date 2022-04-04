@@ -3,6 +3,31 @@
 #include <time.h>
 using namespace std;
 
+//Funcion que calcula la tension generada en un cuerda cuando tiene 1 objeto en cada extremo
+float ejercicio1(float masa1, float masa2) {
+    const float g = 9.8; // Valor de G
+    return ((2 * masa1 * masa2) / (masa1 + masa2)) * g;
+}
+
+//Funcion que calcula e impreme en pantalla el redimiento de un automovil en mi/gal y en l/100km
+void ejercicio2(float millasRecorridas, float galonesConsumidos) {
+    float rendimiento = millasRecorridas / galonesConsumidos;
+    float conversion = 235.215 / rendimiento; // Pasa el redimiento de mi/gal a l/100km
+    printf("La eficiencia del carro es: %.1f mi/gal (equivalente a %.2fl /100km).", rendimiento, conversion);
+}
+
+//Funcion que recibe una altura en pies y pulgadas y imprime en pantalla la altura en a metros
+void ejercicio3(int pies, int pulgadas) {
+    float metros = (pies * 0.3048) + (pulgadas * 0.0254); // Pasa la altura de pies y pulgadas a metros
+    printf("Altura: %d pies %d pulgadas.\nLa altura de la persona es: %.2f m", pies, pulgadas, metros);
+}
+
+//Recibe un monto de dinero en libras, chelines y peniques, los pasa al nuevo sistema monetario y lo imprime en pantalla
+void ejercicio4(int libras, int chelines, int peniques) {
+    float valor = libras + (float(peniques) / 100); // Se realiza la conversion
+    printf("libras: %d\nchelines: %d\npeniques: %d\nEl valor en el sistema actual es: %f gbp", libras, chelines, peniques, valor);
+}
+
 //Funcion que recibe dos numeros enteros y retorna un numero aleatorio en ese rango
 int valor_aleatorio(int min, int max){
     int retorno;
@@ -13,7 +38,7 @@ int valor_aleatorio(int min, int max){
 
 //Funcion que imprime en orden la cantidad de numeros primos que recibe como parametro
 void determinar_primo(int num){
-    cout << "Numero \t Primo" <<endl; //Encabezado
+    cout << "Numero \t\t Primo" <<endl; //Encabezado
     int ultimo_primo = 2, divisores; //Ultimo primo permite tener un registro para no tener que empezar de 0
     bool es_primo;
     for(int i = 1; i <= num; i++) { //Ciclo principal que permite imprimir la cantidad solicitada de numeros primos
@@ -40,7 +65,40 @@ void determinar_primo(int num){
 
 //Funcion principal
 int main() {
-    int minimo,maximo,numeros_primos;
+    int minimo,maximo,numeros_primos, pies, pulgadas, libras, chelines, peniques;
+    float masa1, masa2, millas, galones;
+    cout << "Ejercicio 1 " << endl;
+    cout << "Digite la masa del primer objeto: ";
+    cin >> masa1;
+    cout << "Digite la masa del segundo objeto: ";
+    cin >> masa2;
+    cout << "La tension es igual a " << ejercicio1(masa1, masa2) << endl;
+    cout << "-----------------------------------------" << endl;
+    cout << "Ejercicio 2 " << endl;
+    cout << "Digite la cantidad de millas recorridas: ";
+    cin >> millas;
+    cout << "Digite los galones de combustible consumidos: ";
+    cin >> galones;
+    ejercicio2(millas, galones);
+    cout << endl;
+    cout << "-----------------------------------------" << endl;
+    cout << "Ejercicio 3 " << endl;
+    cout << "Digite la cantidad de pies: ";
+    cin >> pies;
+    cout << "Digite la cantidad de pulgadas: ";
+    cin >> pulgadas;
+    ejercicio3(pies, pulgadas);
+    cout << endl;
+    cout << "-----------------------------------------" << endl;
+    cout << "Ejercicio 4 " << endl;
+    cout << "Digite la cantidad de libras: ";
+    cin >> libras;
+    cout << "Digite la cantidad de chelines: ";
+    cin >> chelines;
+    cout << "Digite la cantidad de peniques: ";
+    cin >> peniques;
+    ejercicio4(libras, chelines, peniques);
+    cout << endl;
     cout << "-----------------------------------------" << endl;
     cout << "Ejercicio 5 " << endl;
     cout << "Digite el minimo: ";
